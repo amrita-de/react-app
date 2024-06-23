@@ -1,0 +1,103 @@
+
+/* FeatureComponent.css */
+
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.auth-btn {
+    width: 120px;
+}
+
+.feature-section1 {
+    align-items: center; /* Align items horizontally */
+    width: calc(50% - 20px); /* 50% width with 20px spacing */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border: 2px solid rgb(219, 215, 215);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+.feature-section1:hover {
+    background: #6b539c;
+    color: white;
+    border-radius: 25px;
+}
+
+.feature-section1:hover .icon1 i,
+.feature-section1:hover h3 {
+    color: white;
+}
+
+.feature-section2,
+.feature-section3,
+.feature-section4 {
+    align-items: center; /* Align items horizontally */
+    width: calc(50% - 20px); /* 50% width with 20px spacing */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border: 2px solid rgb(219, 215, 215);
+    border-radius: 10px;
+}
+
+.icon1, .icon2, .icon3, .icon4 {
+    font-size: 30px; /* Reduced icon size */
+    margin-right: 10px; /* Add some spacing between icon and text */
+    display: flex;
+    justify-content: center;
+}
+
+.icon1 {
+    color: #6b539c;
+}
+
+.icon1 h3 {
+    color: #6b539c;
+    margin-left: 10px;
+}
+
+.icon2 {
+    color: rgb(49, 152, 49);
+}
+
+.icon2 h3 {
+    color: rgb(49, 152, 49);
+    margin-left: 10px;
+}
+
+.icon3 {
+    color: rgb(192, 46, 46);
+}
+
+.icon3 h3 {
+    color: rgb(192, 46, 46);
+    margin-left: 10px;
+}
+
+.icon4 {
+    color: rgb(79, 144, 185);
+}
+
+.icon4 h3 {
+    color: rgb(79, 144, 185);
+    margin-left: 10px;
+}
+
+.description {
+    text-align: center;
+}
+
+.h3 {
+    margin-left: 10px;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .feature-section {
+        width: 100%;
+    }
+}

@@ -1,0 +1,246 @@
+body {
+    background-color: #F7F5F9;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.home-screen {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+}
+
+.left-section {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.discription1 {
+    display: flex;
+}
+
+.discription2 {
+    display: flex;
+}
+
+.discription3 {
+    display: flex;
+}
+
+.connect-text {
+    margin: 10px 0;
+    color: #a27cb4; 
+}
+
+.social-login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.social-login {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid #a27cb4; 
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+    background-color: #F7F5F9; 
+}
+
+.social-login i {
+    margin-right: 10px;
+    color: inherit; 
+}
+
+.google .fab.fa-google {
+    color: #db4437; 
+}
+
+.facebook .fab.fa-facebook {
+    color: #3b5998; 
+}
+
+.social-login:hover {
+    background-color: #e1bee7; 
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.auth-btn {
+    background-color: #F7F5F9; 
+    padding: 10px 20px;
+    border: 2px solid #a27cb4; 
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.auth-btn:hover {
+    background-color: #e1bee7; 
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-container input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid white;
+    font-size: 16px;
+    color: #a27cb4; 
+    background-color: white; 
+}
+
+.form-container button {
+    background-color: #F7F5F9; 
+    padding: 10px 20px;
+    border: 2px solid #a27cb4; 
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-btn {
+    background-color: #F7F5F9;
+    padding: 10px 20px;
+    border: 2px solid #a27cb4;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-decoration: none; /* Ensure no underline by default */
+    color: #a27cb4; /* Button text color */
+    position: relative;
+}
+
+.auth-btn.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #a27cb4;
+}
+
+.form-container button:hover {
+    background-color: #e1bee7; 
+}
+
+.social-login:hover {
+    background-color: #e1bee7; 
+}
+
+/* Remove hover effect from feature sections */
+.feature-section1,
+.feature-section2,
+.feature-section3,
+.feature-section4 {
+    align-items: center; /* Align items horizontally */
+    width: calc(50% - 20px); /* 50% width with 20px spacing */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border: 2px solid rgb(219, 215, 215);
+    border-radius: 10px;
+    /* transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease; */
+}
+
+
+
+.icon1 {
+    color: #6b539c;
+    font-size: 30px; /* Reduced icon size */
+    margin-right: 10px; /* Add some spacing between icon and text */
+    display: flex;
+    justify-content: center;
+}
+
+.icon1 h3 {
+    color: #6b539c;
+    margin-left: 10px;
+}
+
+.icon2 {
+    color: rgb(49, 152, 49) !important;
+     font-size: 30px; /* Reduced icon size */
+    margin-right: 10px; /* Add some spacing between icon and text */
+    display: flex;
+    justify-content: center;
+}
+
+.icon2 h3 {
+    color: rgb(49, 152, 49);
+    margin-left: 10px;
+}
+
+.icon3 {
+    color: rgb(192, 46, 46)!important;
+}
+
+.icon3 h3 {
+    color: rgb(192, 46, 46);
+    margin-left: 10px;
+}
+
+.icon4 {
+    color: rgb(79, 144, 185)!important;
+}
+
+.icon4 h3 {
+    color: rgb(79, 144, 185);
+    margin-left: 10px;
+}
+
+.description {
+    text-align: center;
+}
+
+.h3 {
+    margin-left: 10px;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .feature-section {
+        width: 100%;
+    }
+}
